@@ -289,6 +289,7 @@ label:hover:before {
 #mainNav .navbar-brand {
   font-weight: 800;
   color: #343a40;
+  text-transform: uppercase;
 }
 
 #mainNav .navbar-toggler {
@@ -317,7 +318,7 @@ label:hover:before {
     color: #212227;
   }
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: #212227;
+    color: #49593e;
   }
 
 @media only screen and (min-width: 992px) {
@@ -348,7 +349,7 @@ label:hover:before {
     color: #212529;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #D9D9D9;
+    color: #49593e;
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */

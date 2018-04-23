@@ -89,6 +89,7 @@ blockquote {
 #mainNav .navbar-brand {
   font-weight: 800;
   color: #343a40;
+  text-transform: uppercase;
 }
 
 #mainNav .navbar-toggler {
@@ -111,18 +112,17 @@ blockquote {
     border-bottom: 1px solid transparent;
   }
   #mainNav .navbar-brand {
-    padding: 10px 20px;
     color: #212227;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: #8DB1AB;
+    color: #49593e;
   }
   #mainNav .navbar-nav > li.nav-item > a {
     padding: 10px 20px;
     color: #212227;
   }
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: #212227;
+    color: #49593e;
   }
 
 @media only screen and (min-width: 992px) {
@@ -149,7 +149,7 @@ blockquote {
     background-color: rgba(255, 255, 255, 0.9);
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #212529;
+    color: #212529
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
     color: #D9D9D9;

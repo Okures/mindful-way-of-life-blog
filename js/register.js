@@ -11,6 +11,8 @@
 	  'msg-error': 'Wrong login credentials!',
 	  'useAJAX': true,
   };
+    // Show the navbar when the page is scrolled up
+  var MQL = 992;
 
 	// Login Form
 	//----------------------------------------------
