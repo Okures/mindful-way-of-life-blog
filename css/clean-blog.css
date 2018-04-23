@@ -81,8 +81,9 @@ blockquote {
 #mainNav {
   position: absolute;
   border-bottom: 1px solid #e9ecef;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
   font-family: 'Indie Flower', cursive;
+  padding: 1.6px;
 }
 
 #mainNav .navbar-brand {
@@ -91,8 +92,8 @@ blockquote {
 }
 
 #mainNav .navbar-toggler {
-  font-size: 12px;
-  font-weight: 800;
+  font-size: 13px;
+  font-weight: 900;
   padding: 13px;
   text-transform: uppercase;
   color: #343a40;
@@ -100,7 +101,7 @@ blockquote {
 
 #mainNav .navbar-nav > li.nav-item > a {
   font-size: 17px;
-  font-weight: 800;
+  font-weight: 900;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -108,7 +109,6 @@ blockquote {
 @media only screen and (min-width: 992px) {
   #mainNav {
     border-bottom: 1px solid transparent;
-    background: transparent;
   }
   #mainNav .navbar-brand {
     padding: 10px 20px;
@@ -122,9 +122,8 @@ blockquote {
     color: #212227;
   }
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
-    color: #8DB1AB;
+    color: #212227;
   }
-}
 
 @media only screen and (min-width: 992px) {
   #mainNav {
@@ -220,7 +219,7 @@ header.masthead .site-heading h1 {
 header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
   font-size: 24px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.1;
   display: block;
   margin: 10px 0 0;
@@ -251,7 +250,7 @@ header.masthead .post-heading .subheading {
 
 header.masthead .post-heading .meta {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 500;
   font-style: italic;
 }
 
