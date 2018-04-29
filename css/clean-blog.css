@@ -89,6 +89,7 @@ img::-moz-selection {
   font-weight: 800;
   color: #343a40;
   text-transform: uppercase;
+  font-size: 23px;
 }
 
 #mainNav .navbar-toggler {
@@ -197,6 +198,7 @@ header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
   padding: 200px 0 150px;
+  font-size: 23px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -258,7 +260,7 @@ header.masthead .post-heading .subheading {
   font-size: 24px;
   font-weight: 600;
   margin: 10px 0 30px;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Titillium Web','Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 header.masthead .post-heading .meta {
@@ -504,6 +506,10 @@ footer .copyright {
   position: relative;
 }
 
+.signup-register .text-center .login-form-1 .form-group .reg {
+  font-size: 41px;
+}
+
 .signup-register .text-center .login-form-1 .form-group:last-child {
   border-bottom: 0;
 }
@@ -737,7 +743,7 @@ footer .copyright {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Titillium Web','Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .btn-primary {
