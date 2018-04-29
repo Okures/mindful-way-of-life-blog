@@ -1,19 +1,9 @@
-.site-heading .subheading a {
-  color:#D9D9D9;
-}
-#baslik {
-  color:#D9D9D9;
-}
-
-.masthead .page-heading .subheading, h1{
-  color:#212227;
-}
-
+@charset "UTF-8";
 body {
   font-size: 20px;
   color: #212529;
   font-family: 'Titillium Web', sans-serif;
-  }
+}
 
 p {
   line-height: 1.5;
@@ -77,6 +67,15 @@ blockquote {
   text-shadow: none;
 }
 
+img::selection {
+  color: #fff;
+  background: transparent;
+}
+
+img::-moz-selection {
+  color: #fff;
+  background: transparent;
+}
 
 #mainNav {
   position: absolute;
@@ -90,6 +89,7 @@ blockquote {
   font-weight: 800;
   color: #343a40;
   text-transform: uppercase;
+  font-size: 23px;
 }
 
 #mainNav .navbar-toggler {
@@ -112,6 +112,7 @@ blockquote {
     border-bottom: 1px solid transparent;
   }
   #mainNav .navbar-brand {
+    padding: 10px 20px;
     color: #212227;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -124,6 +125,7 @@ blockquote {
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
     color: #49593e;
   }
+}
 
 @media only screen and (min-width: 992px) {
   #mainNav {
@@ -149,10 +151,10 @@ blockquote {
     background-color: rgba(255, 255, 255, 0.9);
   }
   #mainNav.is-fixed .navbar-brand {
-    color: #212529
+    color: #212529 #mainNav.is-fixed .navbar-brand;
   }
-  #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #D9D9D9;
+  #mainNav.is-fixed .navbar-brand :focus, #mainNav.is-fixed .navbar-brand:hover {
+    color: #0085A1;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
     color: #212529;
@@ -173,6 +175,7 @@ blockquote {
 header.masthead {
   margin-bottom: 50px;
   background: no-repeat center center;
+  background-color: #868e96;
   background-attachment: scroll;
   position: relative;
   -webkit-background-size: cover;
@@ -187,14 +190,15 @@ header.masthead .overlay {
   left: 0;
   height: 100%;
   width: 100%;
+  background-color: #212529;
+  opacity: 0.5;
 }
 
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-   color:#D9D9D9;
-   font-family: 'Indie Flower', cursive;
-
+  padding: 200px 0 150px;
+  font-size: 23px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -214,15 +218,19 @@ header.masthead .page-heading h1,
 header.masthead .site-heading h1 {
   font-size: 55px;
   margin-top: 0;
+  color: #D9D9D9;
+  font-family: 'Indie Flower', cursive;
 }
 
 header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
-  font-size: 24px;
   font-weight: 500;
+  font-weight: 300;
   line-height: 1.1;
   display: block;
   margin: 10px 0 0;
+  color: #D9D9D9;
+  font-family: 'Indie Flower', cursive;
 }
 
 @media only screen and (min-width: 768px) {
@@ -233,11 +241,17 @@ header.masthead .site-heading .subheading {
 }
 
 header.masthead .post-heading h1 {
+  font-family: 'Indie Flower', cursive;
   font-size: 35px;
+}
+
+header.masthead .post-heading h1 #conta {
+  color: #D9D9D9;
 }
 
 header.masthead .post-heading .meta,
 header.masthead .post-heading .subheading {
+  font-family: 'Indie Flower', cursive;
   line-height: 1.1;
   display: block;
 }
@@ -246,16 +260,18 @@ header.masthead .post-heading .subheading {
   font-size: 24px;
   font-weight: 600;
   margin: 10px 0 30px;
+  font-family: 'Titillium Web','Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 header.masthead .post-heading .meta {
   font-size: 20px;
-  font-weight: 500;
   font-style: italic;
+  font-weight: 500;
+  font-family: 'Lora', 'Times New Roman', serif;
 }
 
 header.masthead .post-heading .meta a {
-  color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -353,6 +369,7 @@ header.masthead .post-heading .meta a {
   vertical-align: middle;
   vertical-align: baseline;
   opacity: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 .floating-label-form-group .help-block {
@@ -387,6 +404,338 @@ footer .copyright {
   text-align: center;
 }
 
+.signup-background {
+  background-image: url("../img/Optimized-IMG_1519.JPG");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.signup-register {
+  font-family: 'Varela Round';
+}
+
+.signup-register .text-center {
+  /*=== 2. Anchor Link ===*/
+  /*=== 3. Text Outside the Box ===*/
+  /*=== 4. Main Form ===*/
+  /*=== 5. Login Button ===*/
+  /*position: absolute;
+      right: -25px;
+      top: 50%;
+      background: #ffffff;
+      color: #999999;
+      padding: 11px 0;
+      width: 50px;
+      height: 50px;
+      margin-top: -25px;
+      border: 5px solid #efefef;
+      border-radius: 50%;
+      transition: all ease-in-out 500ms;
+    }*/
+  /*=== 6. Form Invalid ===*/
+  /*=== 7. Form - Main Message ===*/
+  /*=== 8. Custom Checkbox & Radio ===*/
+  /* Base for label styling */
+  /* checkbox aspect */
+  /* checked mark aspect */
+  /* checked mark aspect changes */
+  /* disabled checkbox */
+  /* accessibility */
+  /* hover style just for information */
+  /*=== Customization ===*/
+  /* radio aspect */
+  /* selected mark aspect */
+}
+
+.signup-register .text-center a {
+  color: #aaaaaa;
+  transition: all ease-in-out 200ms;
+}
+
+.signup-register .text-center a:hover {
+  color: #333333;
+  text-decoration: none;
+}
+
+.signup-register .text-center .etc-login-form {
+  color: #919191;
+  padding: 10px 20px;
+}
+
+.signup-register .text-center .etc-login-form p {
+  margin-bottom: 5px;
+}
+
+.signup-register .text-center .login-form-1,
+.signup-register .text-center .logo .login-form-1 {
+  max-width: 300px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.signup-register .text-center .main-login-form {
+  padding-top: 60px;
+  position: relative;
+}
+
+.signup-register .text-center .login-form-1 .form-control {
+  border: 0;
+  box-shadow: 0 0 0;
+  border-radius: 0;
+  background: transparent;
+  color: #555555;
+  padding: 7px 0;
+  font-weight: bold;
+  height: auto;
+}
+
+.signup-register .text-center .login-form-1 .form-control::-webkit-input-placeholder {
+  color: #999999;
+}
+
+.signup-register .text-center .login-form-1 .form-control:-moz-placeholder,
+.signup-register .text-center .login-form-1 .form-control::-moz-placeholder,
+.signup-register .text-center .login-form-1 .form-control:-ms-input-placeholder {
+  color: #999999;
+}
+
+.signup-register .text-center .login-form-1 .form-group {
+  margin-bottom: 0;
+  border-bottom: 2px solid #efefef;
+  padding-right: 20px;
+  position: relative;
+}
+
+.signup-register .text-center .login-form-1 .form-group .reg {
+  font-size: 41px;
+}
+
+.signup-register .text-center .login-form-1 .form-group:last-child {
+  border-bottom: 0;
+}
+
+.signup-register .text-center .login-group, .signup-register .text-center .etc-login-form {
+  background: #ffffff;
+  color: #999999;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.signup-register .text-center .login-group-checkbox {
+  padding: 5px 0;
+}
+
+.signup-register .text-center .login-form-1 .login-button {
+  padding: 9px 12px 10px !important;
+  margin-left: 80px;
+  margin-top: 4px;
+  font-size: 18px !important;
+  background-color: #ffffff;
+  font-weight: bold;
+  color: #999999;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1.3px solid #999999;
+  cursor: pointer;
+  object-position: center;
+}
+
+.signup-register .text-center .login-form-1 .login-button:hover {
+  color: #555555;
+  background-color: #c7c9cc;
+}
+
+.signup-register .text-center .login-form-1 .login-button.clicked {
+  color: #555555;
+}
+
+.signup-register .text-center .login-form-1 .login-button.clicked:hover {
+  transform: none;
+}
+
+.signup-register .text-center .login-form-1 .login-button.clicked.success {
+  color: #2ecc71;
+}
+
+.signup-register .text-center .login-form-1 .login-button.clicked.error {
+  color: #e74c3c;
+}
+
+.signup-register .text-center label.form-invalid {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 5;
+  display: block;
+  margin-top: -25px;
+  padding: 7px 9px;
+  background: #777777;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.signup-register .text-center label.form-invalid:after {
+  top: 100%;
+  right: 10px;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-top-color: #777777;
+  border-width: 6px;
+}
+
+.signup-register .text-center .login-form-main-message {
+  background: #ffffff;
+  color: #999999;
+  border-left: 3px solid transparent;
+  border-radius: 3px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  height: 0;
+  padding: 0 20px 0 17px;
+  opacity: 0;
+  transition: all ease-in-out 200ms;
+}
+
+.signup-register .text-center .login-form-main-message.show {
+  height: auto;
+  opacity: 1;
+  padding: 10px 20px 10px 17px;
+}
+
+.signup-register .text-center .login-form-main-message.success {
+  border-left-color: #2ecc71;
+}
+
+.signup-register .text-center .login-form-main-message.error {
+  border-left-color: #e74c3c;
+}
+
+.signup-register .text-center [type="checkbox"]:not(:checked),
+.signup-register .text-center [type="checkbox"]:checked,
+.signup-register .text-center [type="radio"]:not(:checked),
+.signup-register .text-center [type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+.signup-register .text-center [type="checkbox"]:not(:checked) + label,
+.signup-register .text-center [type="checkbox"]:checked + label,
+.signup-register .text-center [type="radio"]:not(:checked) + label,
+.signup-register .text-center [type="radio"]:checked + label {
+  position: relative;
+  padding-left: 25px;
+  padding-top: 1px;
+  cursor: pointer;
+}
+
+.signup-register .text-center [type="checkbox"]:not(:checked) + label:before,
+.signup-register .text-center [type="checkbox"]:checked + label:before,
+.signup-register .text-center [type="radio"]:not(:checked) + label:before,
+.signup-register .text-center [type="radio"]:checked + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 17px;
+  height: 17px;
+  border: 0px solid #aaa;
+  background: #f0f0f0;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.signup-register .text-center [type="checkbox"]:not(:checked) + label:after,
+.signup-register .text-center [type="checkbox"]:checked + label:after,
+.signup-register .text-center [type="radio"]:not(:checked) + label:after,
+.signup-register .text-center [type="radio"]:checked + label:after {
+  position: absolute;
+  color: #555555;
+  transition: all .2s;
+}
+
+.signup-register .text-center [type="checkbox"]:not(:checked) + label:after,
+.signup-register .text-center [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.signup-register .text-center [type="checkbox"]:checked + label:after,
+.signup-register .text-center [type="radio"]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.signup-register .text-center [type="checkbox"]:disabled:not(:checked) + label:before,
+.signup-register .text-center [type="checkbox"]:disabled:checked + label:before,
+.signup-register .text-center [type="radio"]:disabled:not(:checked) + label:before,
+.signup-register .text-center [type="radio"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #8c8c8c;
+  background-color: #878787;
+}
+
+.signup-register .text-center [type="checkbox"]:disabled:checked + label:after,
+.signup-register .text-center [type="radio"]:disabled:checked + label:after {
+  color: #555555;
+}
+
+.signup-register .text-center [type="checkbox"]:disabled + label,
+.signup-register .text-center [type="radio"]:disabled + label {
+  color: #8c8c8c;
+}
+
+.signup-register .text-center [type="checkbox"]:checked:focus + label:before,
+.signup-register .text-center [type="checkbox"]:not(:checked):focus + label:before,
+.signup-register .text-center [type="checkbox"]:checked:focus + label:before,
+.signup-register .text-center [type="checkbox"]:not(:checked):focus + label:before {
+  border: 1px dotted #f6f6f6;
+}
+
+.signup-register .text-center label:hover:before {
+  border: 1px solid #f6f6f6 !important;
+}
+
+.signup-register .text-center [type="checkbox"]:not(:checked) + label:before,
+.signup-register .text-center [type="checkbox"]:checked + label:before {
+  border-radius: 3px;
+}
+
+.signup-register .text-center [type="radio"]:not(:checked) + label:before,
+.signup-register .text-center [type="radio"]:checked + label:before {
+  border-radius: 35px;
+}
+
+.signup-register .text-center [type="checkbox"]:not(:checked) + label:after,
+.signup-register .text-center [type="checkbox"]:checked + label:after {
+  content: '✔';
+  top: 0;
+  left: 2px;
+  font-size: 14px;
+}
+
+.signup-register .text-center [type="radio"]:not(:checked) + label:after,
+.signup-register .text-center [type="radio"]:checked + label:after {
+  content: '\2022';
+  top: 0;
+  left: 3px;
+  font-size: 30px;
+  line-height: 25px;
+}
+
+.signup-register .text-center .login-form-1 .form-group .social_signup {
+  font-size: 19px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .btn {
   font-size: 14px;
   font-weight: 800;
@@ -394,7 +743,7 @@ footer .copyright {
   letter-spacing: 1px;
   text-transform: uppercase;
   border-radius: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Titillium Web','Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .btn-primary {
@@ -411,4 +760,12 @@ footer .copyright {
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
+}
+
+.site-heading .subheading a, #baslik {
+  color: #D9D9D9;
+}
+
+.masthead .page-heading .subheading, h1 {
+  color: #212227;
 }

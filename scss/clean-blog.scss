@@ -6,4 +6,13 @@
 @import "post.scss";
 @import "contact.scss";
 @import "footer.scss";
+@import "register.scss";
 @import "bootstrap-overrides.scss";
+
+.site-heading .subheading a, #baslik {
+  color:#D9D9D9;
+}
+
+.masthead .page-heading .subheading, h1{
+  color:#212227;
+}
