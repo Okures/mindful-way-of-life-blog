@@ -26,9 +26,7 @@
         "url": "https://github.com/Okures/mindful-way-of-life-blog.git"
     },
     "dependencies": {
-        "bootstrap": "4.0.0",
-        "font-awesome": "4.7.0",
-        "jquery": "3.3.1"
+        "bootstrap": "4.0.0"
     },
     "devDependencies": {
         "browser-sync": "2.23.6",
