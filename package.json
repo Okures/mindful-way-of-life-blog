@@ -17,13 +17,13 @@
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "Ozge Kures",
     "contributors": [
         "David Miller (http://davidmiller.io/)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-clean-blog.git"
+        "url": "https://github.com/Okures/mindful-way-of-life-blog.git"
     },
     "dependencies": {
         "bootstrap": "4.0.0",
