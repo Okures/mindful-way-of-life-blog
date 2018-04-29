@@ -2,15 +2,17 @@
 #mainNav {
   position: absolute;
   border-bottom: 1px solid $gray-200;
-  background-color: white;
-  @include sans-serif-font;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: 'Indie Flower', cursive;
+  padding: 1.6px;
   .navbar-brand {
     font-weight: 800;
     color: $gray-800;
+    text-transform: uppercase;
   }
   .navbar-toggler {
-    font-size: 12px;
-    font-weight: 800;
+    font-size: 13px;
+    font-weight: 900;
     padding: 13px;
     text-transform: uppercase;
     color: $gray-800;
@@ -18,8 +20,8 @@
   .navbar-nav {
     > li.nav-item {
       > a {
-        font-size: 12px;
-        font-weight: 800;
+        font-size: 17px;
+        font-weight: 900;
         letter-spacing: 1px;
         text-transform: uppercase;
       }
@@ -27,23 +29,22 @@
   }
   @media only screen and (min-width: 992px) {
     border-bottom: 1px solid transparent;
-    background: transparent;
     .navbar-brand {
       padding: 10px 20px;
-      color: $white;
+      color: #212227;
       &:focus,
       &:hover {
-        color: fade-out($white, .2);
+        color: #49593e;
       }
     }
     .navbar-nav {
       > li.nav-item {
         > a {
           padding: 10px 20px;
-          color: $white;
+          color: #212227;
           &:focus,
           &:hover {
-            color: fade-out($white, .2);
+            color: #49593e;
           }
         }
       }
@@ -70,7 +71,7 @@
       border-bottom: 1px solid darken($white, .05);
       background-color: fade-out($white, .1);
       .navbar-brand {
-        color: $gray-900;
+        color: #212529
         &:focus,
         &:hover {
           color: $primary;
@@ -82,7 +83,7 @@
             color: $gray-900;
             &:focus,
             &:hover {
-              color: $primary;
+              color: #D9D9D9;
             }
           }
         }

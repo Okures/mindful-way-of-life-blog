@@ -20,7 +20,6 @@ header.masthead {
   .post-heading,
   .site-heading {
     padding: 200px 0 150px;
-    color: white;
     @media only screen and (min-width: 768px) {
       padding: 200px 0;
     }
@@ -29,16 +28,19 @@ header.masthead {
   .site-heading {
     text-align: center;
     h1 {
-      font-size: 50px;
+      font-size: 55px;
       margin-top: 0;
+      color:#D9D9D9;
+      font-family: 'Indie Flower', cursive;
     }
     .subheading {
-      font-size: 24px;
+      font-weight: 500;
       font-weight: 300;
       line-height: 1.1;
       display: block;
       margin: 10px 0 0;
-      @include sans-serif-font;
+      color:#D9D9D9;
+      font-family: 'Indie Flower', cursive;
     }
     @media only screen and (min-width: 768px) {
       h1 {
@@ -48,10 +50,15 @@ header.masthead {
   }
   .post-heading {
     h1 {
+      font-family: 'Indie Flower', cursive;
       font-size: 35px;
+      #conta {
+        color: #D9D9D9;
+      }
     }
     .meta,
     .subheading {
+      font-family: 'Indie Flower', cursive;
       line-height: 1.1;
       display: block;
     }
@@ -63,11 +70,11 @@ header.masthead {
     }
     .meta {
       font-size: 20px;
-      font-weight: 300;
       font-style: italic;
+      font-weight: 500;
       @include serif-font;
       a {
-        color: $white;
+        font-family: 'Roboto', sans-serif;
       }
     }
     @media only screen and (min-width: 768px) {
